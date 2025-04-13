@@ -10,5 +10,6 @@ dependencies = [
     "gunicorn>=23.0.0",
     "pdfplumber>=0.11.6",
     "psycopg2-binary>=2.9.10",
+    "pypdf2>=3.0.1",
     "reportlab>=4.3.1",
 ]

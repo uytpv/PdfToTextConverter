@@ -5,4 +5,3 @@ Các dấu: à, á, ả, ã, ạ, À, Á, Ả, Ã, Ạ
 Đoạn văn bản này kiểm tra khả năng trích xuất văn bản UTF-8.
 Việt Nam là một quốc gia ở Đông Nam Á.
 Hà Nội là thủ đô của Việt Nam.
-

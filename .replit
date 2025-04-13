@@ -23,6 +23,10 @@ args = "Start application"
 task = "workflow.run"
 args = "pdf_converter_workflow"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "pdf_converter"
+
 [[workflows.workflow]]
 name = "Start application"
 author = "agent"
@@ -51,6 +55,20 @@ task = "packager.installForAll"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "pip install pdfplumber && python main.py"
+
+[[workflows.workflow]]
+name = "pdf_converter"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pip install PyPDF2 && python main.py"
 
 [[ports]]
 localPort = 5000
