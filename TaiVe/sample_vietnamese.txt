@@ -1,0 +1,8 @@
+Đây là mẫu PDF tiếng Việt để kiểm tra chức năng chuyển đổi.
+Xin chào! Chương trình chuyển đổi PDF sang TXT.
+Các ký tự đặc biệt: ă, â, đ, ê, ô, ơ, ư, Ă, Â, Đ, Ê, Ô, Ơ, Ư
+Các dấu: à, á, ả, ã, ạ, À, Á, Ả, Ã, Ạ
+Đoạn văn bản này kiểm tra khả năng trích xuất văn bản UTF-8.
+Việt Nam là một quốc gia ở Đông Nam Á.
+Hà Nội là thủ đô của Việt Nam.
+
