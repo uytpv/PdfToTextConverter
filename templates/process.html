@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Xử lý file PDF - PDF Converter{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Xử lý file PDF</h4>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Hệ thống sẽ tự động:
+                </p>
+                <ol>
+                    <li>Chuyển đổi tất cả các file PDF trong thư mục <code>TaiVe</code> sang định dạng TXT</li>
+                    <li>Tìm kiếm các từ khóa đã được định nghĩa trong nội dung văn bản</li>
+                    <li>Lưu trữ kết quả tìm kiếm vào cơ sở dữ liệu</li>
+                    <li>Di chuyển các file PDF đã xử lý vào thư mục <code>TaiVe_Done</code></li>
+                </ol>
+                
+                <div class="alert alert-info">
+                    <h5 class="alert-heading">Lưu ý quan trọng!</h5>
+                    <p>Đảm bảo rằng:</p>
+                    <ul>
+                        <li>Đã thêm các từ khóa cần tìm kiếm vào hệ thống</li>
+                        <li>Đã đặt các file PDF cần xử lý vào thư mục <code>TaiVe</code></li>
+                    </ul>
+                </div>
+                
+                <form action="{{ url_for('process_files') }}" method="post">
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">Bắt đầu xử lý</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
