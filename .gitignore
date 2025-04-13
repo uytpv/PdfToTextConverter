@@ -1,0 +1,21 @@
+# Thư mục chứa PDF gốc và đã xử lý
+TaiVe/
+TaiVe_Done/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Môi trường ảo
+venv/
+env/
+ENV/
+
+# Logs và files tạm
+*.log
+*.tmp
+
+# Files hệ thống
+.DS_Store
+Thumbs.db
